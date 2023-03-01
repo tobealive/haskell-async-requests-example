@@ -1,0 +1,39 @@
+cabal-version:      3.0
+name:               async-requests
+version:            0.1.0.0
+synopsis:
+
+-- A longer description of the package.
+-- description:
+homepage:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            MIT
+license-file:       LICENSE
+author:             Turiiya
+maintainer:         34311583+tobealive@users.noreply.github.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable async-requests
+   main-is:          Main.hs
+   ghc-options:      -fno-warn-tabs
+   
+   -- Modules included in this executable, other than Main.
+   -- other-modules:
+   
+   -- LANGUAGE extensions used by modules in this package.
+   -- other-extensions:
+   build-depends:
+      , async
+      , base          ^>=4.16.4.0
+      , bytestring
+      , http-conduit
+      , time
+   
+   hs-source-dirs:   app
+   default-language: Haskell2010
